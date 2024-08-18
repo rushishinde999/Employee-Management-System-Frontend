@@ -1,0 +1,51 @@
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #cc6b6b;
+  border-radius: 10px;
+  background-color: #b39292d0;
+  box-shadow: 1px 1px 2opx yellow;
+}
+h3 {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+button {
+  padding: 14px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.Add:hover {
+  background-color: #45a049;
+}
+ .cancel 
+{
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.cancel:hover{
+  background-color: red;
+}

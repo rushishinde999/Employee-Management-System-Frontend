@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  background-color: bisque;
+  display: flex;}
+
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #e1d7d7;
+  color: #333;
+}
+.delete{
+  border:  none;
+  cursor: pointer;
+}
+.delete:hover
+{
+background-color: red;
+}
+.edit{
+  border:none;
+  cursor: pointer;
+}
+.edit:hover{
+  background-color: chocolate;
+}
