@@ -1,9 +1,11 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import Navbar from "./Layout/navbar";
 import Home from "./pages/Home";
 import AddUser from "./User/AddUser";
+import EditUser from "./User/EditUser";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,15 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <AddUser />
+      </>
+    ),
+  },
+  {
+    path: "/edituser/:id",
+    element: (
+      <>
+        <Navbar />
+        <EditUser />
       </>
     ),
   },

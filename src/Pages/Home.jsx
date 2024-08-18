@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   const [emp, setEmp] = useState([]);
 
@@ -11,6 +11,10 @@ const Home = () => {
   const loaduser = async () => {
     const result = await axios.get("http://localhost:9999/display");
     setEmp(result.data);
+  };
+  const deleteUser = async (id) => {
+    await axios.delete(`http://localhost:9999/${id}`);
+    loaduser();
   };
 
   return (
@@ -35,8 +39,15 @@ const Home = () => {
               <td>{emp.username}</td>
               <td>{emp.email}</td>
 
-              <button className="edit">Edit</button>
-              <button className="delete"> Delete</button>
+              <button>
+                <Link to={`/edituser/${emp.id}`} className="edit">
+                  Edit
+                </Link>
+              </button>
+
+              <button onClick={() => deleteUser(emp.id)} className="delete">
+                Delete
+              </button>
             </>
           ))}
         </tbody>
