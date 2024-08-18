@@ -3,8 +3,27 @@
   padding: 0;
   font-family: sans-serif;
 }
+body{
+
+
+    background-image: url(https://lh3.googleusercontent.com/proxy/QCe-u90q3k-uVLT9-1LBgcLl-mI_ZBGEP7LpPLXwW2jxiRJPZ-Fh63DF_Ig-IjDJPIpjvv9W5yGNwyQcsiRBFLrt6Y6uxp1H6EOVSoXAInSQnLzCTM_41ZU=s0-d);
+    background-size: cover;
+  
+    background-position: center center;
+   
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    overflow: hidden;
+   
+    height: 150vh;
+
+    margin: 0;
+
+  }
 .container {
-  background-color: bisque;
+  background-color: rgb(225, 150, 59);
   display: flex;}
 
 
@@ -21,15 +40,17 @@ td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+  color: white;
 }
 
 th {
-  background-color: #e1d7d7;
+  background-color: #7d7e3a;
   color: #333;
 }
 .delete{
   border:  none;
   cursor: pointer;
+  margin-left: 5px;
 }
 .delete:hover
 {
