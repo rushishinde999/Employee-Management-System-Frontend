@@ -12,8 +12,7 @@ const AddUser = () => {
 
   const { name, username, email } = emp;
   const inputchange = (e) => {
-    const { name, value } = e.target;
-    setEmp({ ...emp, [name]: value });
+    setEmp({ ...emp, [e.target.name]: e.target.value });
   };
 
   const datasumbit = async (e) => {
